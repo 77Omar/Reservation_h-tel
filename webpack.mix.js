@@ -11,5 +11,31 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.js(['resources/js/app.js',
+      'resources/js/bootstrap.js',
+      'resources/js/jquery.js',
+      'resources/js/bootstrap.min.js', 
+      'resources/js/mousescroll.js',
+      'resources/js/html5shiv.js',
+      'resources/js/smoothscroll.js',
+      'resources/js/jquery.prettyPhoto.js',
+      'resources/js/jquery.isotope.min.js',
+      'resources/js/jquery.inview.min.js',
+      'resources/js/wow.min.js',
+      'resources/js/custom-scripts.js',
+      'resources/js/modernizr.custom.79639.js',
+      'resources/js/respond.min.js',
+      'resources/js/jquery.ba-cond.min.js',
+      'resources/js/jquery.slitslider.js',
+      'resources/js/slitslider-custom.js'],
+      'public/js')
+   .sass('resources/sass/app.scss', 'public/css')
+   .styles(['resources/css/bootstrap.min.css',
+            'resources/css/font-awesome.min.css',
+            'resources/css/animate.min.css',
+            'resources/css/prettyPhoto.css',
+            'resources/css/styles.css',
+            'resources/css/slider-style.css',
+            'resources/css/slider-custom.css',
+            'resources/css/bootstrap.min.css',],
+            'public/css/all.css');
