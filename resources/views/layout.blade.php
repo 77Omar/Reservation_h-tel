@@ -7,18 +7,20 @@
     <meta name="author" content="webthemez">
     <title>Golden-Hotel-Free-HTML5-Bootstrap-Web-Template</title>
 	<!-- core CSS -->
-  
-       
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> 
+	
+        <link rel="stylesheet" type="text/css" href="css/slider-style.css" />
+        <link rel="stylesheet" type="text/css" href="css/slider-custom.css" />
 		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->       
     <link rel="shortcut icon" href="images/ico/favicon.ico"> 
-    <link href="{{asset('css/app.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/all.css')}}" rel="stylesheet" />
-
-
 </head> 
 
 <body id="home">
@@ -49,9 +51,11 @@
             </div><!--/.container-->
         </nav><!--/nav-->
     </header><!--/header-->
+    
     @yield('content')
 
- <footer id="footer">
+ 
+    <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
@@ -71,9 +75,17 @@
         </div>
     </footer><!--/#footer-->
 
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
 	<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
     <script type="text/javascript" src="js/jquery.slitslider.js"></script>
 	<script type="text/javascript" src="js/slitslider-custom.js"></script>
-  <script src="{{asset('js/app.js')}}"></script>
+    <script src="js/custom-scripts.js"></script>
 </body>
 </html>

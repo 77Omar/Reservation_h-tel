@@ -24,7 +24,7 @@ class HotelController extends Controller
      */
     public function create()
     {
-        //
+        return view('Hôtel.create');
     }
 
     /**
@@ -35,7 +35,16 @@ class HotelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $hote = new \App\Hotel();
+   $hote->nom = $request->input('nom');
+   $hote->adresse = $request->input('adresse');
+   $hote->categories = $request->input('categories');
+   $hote->type = $request->input('type');
+   $hote->nombre_etoile = $request->input('nombre_etoile');
+   
+   $hote->save();
+   return redirect('/');
+
     }
 
     /**
@@ -57,7 +66,8 @@ class HotelController extends Controller
      */
     public function edit($id)
     {
-        //
+        $hotel = \App\Hotel::find($id);//on recupere
+        return view('Hôtel.edit', compact('hotel'));
     }
 
     /**
@@ -69,9 +79,18 @@ class HotelController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $hotel = \App\Hotel::find($id);
+   if($hotel){
+       $hotel->update([
+           'nom' => $request->input('nom'),
+           'adresse' => $request->input('adresse'),
+           'categories' => $request->input('categories'),
+           'type' => $request->input('type'),
+           'nombre_etoile' => $request->input('nombre_etoile'),
+       ]);
     }
-
+       return redirect()->back();
+    }
     /**
      * Remove the specified resource from storage.
      *
@@ -80,6 +99,10 @@ class HotelController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $hotel = \App\Hotel::find($id);
+        if($hotel)
+            $hotel->delete();
+        return redirect()->route('Hôtel.index');
+     
     }
 }

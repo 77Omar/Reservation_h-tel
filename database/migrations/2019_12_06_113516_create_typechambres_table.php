@@ -15,8 +15,9 @@ class CreateTypechambresTable extends Migration
     {
         Schema::create('typechambres', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('typechambre');
-          
+            $table->string('chambre_de_luxe');
+            $table->string('chambre_de_famille');
+            $table->string('chambre_superieur');
             $table->timestamps();
         });
     }

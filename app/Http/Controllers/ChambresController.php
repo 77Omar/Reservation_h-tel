@@ -23,10 +23,12 @@ class ChambresController extends Controller
      * @return \Illuminate\HTTp\response
      */
     public function create()
-{
-   return view('chambre.create');
+    {
+        $chambres= \App\Chambre::orderBy('created_at', 'DESC')->first();
+        $typechambres = \App\Typechambre::pluck('typechambre','id');
+        return view('chambre.create', compact('chambres','typechambres'));
 
-}
+    }
 
 
 
@@ -39,15 +41,16 @@ class ChambresController extends Controller
      */
     public function store(Request $request)
     {
+        $chambre = new \App\Chambre();
+        $chambre->Numero_chambre = $request->input('Numero_chambre');
+        $chambre->prix_chambre = $request->input('prix_chambre');
+        $chambre->Nbr_de_lit = $request->input('Nbr_de_lit');
+        $chambre->typechambre_id = $request->input("typechambre_id");
 
-   $chambre = new \App\Chambre();
-   $chambre->Numero_chambre = $request->input('Numero_chambre');
-   $chambre->prix_chambre = $request->input('prix_chambre');
-   $chambre->Nbr_de_lit = $request->input('Nbr_de_lit');
-   $chambre->save();
-   return redirect('/');
+        $chambre->save();
+        return redirect('/');
 
-
+     
     }
 
     /**
@@ -69,9 +72,13 @@ class ChambresController extends Controller
      */
     public function edit($id)
     {
-            $chambre = \App\Chambre::find($id);//on recupere
-            return view('chambres.edit', compact('chambre'));
-         
+            $chambres = \App\Chambre::find($id);//on recupere
+            return view('chambre.edit', compact('chambres'));
+
+            $chambres= \App\Chambre::orderBy('created_at', 'DESC')->first();
+            $typechambres = \App\Typechambre::pluck('typechambre','id');
+            return view('chambre.edit', compact('chambres','typechambres'));
+
     }
 
     /**
@@ -89,9 +96,16 @@ class ChambresController extends Controller
            'Numero_chambre' => $request->input('Numero_chambre'),
            'prix_chambre' => $request->input('prix_chambre'),
            'Nbr_de_lit' => $request->input('Nbr_de_lit'),
+           'typechambre_id' => $request->input('typechambre_id')
+
+        
+           
        ]);
    }
    return redirect()->back();
+
+       
+
 
     }
 
@@ -103,6 +117,9 @@ class ChambresController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $chambre = \App\Chambre::find($id);
+        if($chambre)
+            $chambre->delete();
+        return redirect()->route('chambre.index');
     }
 }

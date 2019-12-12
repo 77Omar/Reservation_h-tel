@@ -25,7 +25,7 @@ class TypechambreController extends Controller
      */
     public function create()
     {
-        //
+        return view('type chambre.create');
     }
 
     /**
@@ -47,7 +47,14 @@ class TypechambreController extends Controller
      */
     public function show($id)
     {
-        //
+        $Type = new \App\Typechambre();
+        $Type->chambre_de_luxe = $request->input('chambre_de_luxe');
+        $Type->chambre_de_famille = $request->input('chambre_de_famille');
+        $Type->chambre_superieur = $request->input('chambre_superieur');
+        
+
+        $Type->save();
+        return redirect('/');
     }
 
     /**
@@ -58,7 +65,8 @@ class TypechambreController extends Controller
      */
     public function edit($id)
     {
-        //
+        $typechambre = \App\Typechambre::find($id);//on recupere
+        return view('type chambre.edit', compact('typechambre'));
     }
 
     /**
@@ -70,7 +78,18 @@ class TypechambreController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+            
+   $typechambre = \App\Typechambre::find($id);
+   if($typechambre){
+       $typechambre->update([
+           'chambre_de_luxe' => $request->input('chambre_de_luxe'),
+           'chambre_de_famille' => $request->input('chambre_de_famille'),
+           'chambre_superieur' => $request->input('chambre_superieur'),
+
+       ]);
+   }
+   return redirect()->back();
+
     }
 
     /**
@@ -81,6 +100,9 @@ class TypechambreController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $typechambre = \App\Typechambre::find($id);
+        if($typechambre)
+            $typechambre->delete();
+        return redirect()->route('typechambre.index');
     }
 }

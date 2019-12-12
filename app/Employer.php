@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Employer extends Model
 {
+    protected $table = 'employers';
     protected $guarded = [];
     public function personne(){
         return $this->belongsTo("App\personne");

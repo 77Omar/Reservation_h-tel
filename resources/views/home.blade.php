@@ -1,6 +1,5 @@
 @extends('layout')
 @section('content')
-
     <section class="demo-2">
            <div id="slider" class="sl-slider-wrapper">
 
@@ -611,4 +610,3 @@ OUR TRAINERS
         </div>   
    </section><!--/#bottom-->
 @endsection
-   

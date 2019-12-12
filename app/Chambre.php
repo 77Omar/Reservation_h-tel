@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Chambre extends Model
 {
-    protected $table = 'Chambres';
+    protected $table = 'chambres';
     protected $guarded = [];
     public function Hotel(){
         return $this->belongsTo("App\Hotel");

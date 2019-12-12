@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class personne extends Model
 {
+    protected $table = 'personnes';
     protected $guarded = [];
     public function Reservations(){
         return $this->hasMany("App\Reservation");
