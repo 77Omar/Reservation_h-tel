@@ -29,6 +29,9 @@ Route::get("/Reservation/{id}","HomeController@show");
 
 Route::resource('/chambre',"ChambresController");
 Route::get("/chambre/edit/{id}", "ChambresController@edit")->name('editer_Chambre'); 
+Route::get("/chambre/create/{id}", "ChambresController@create")->name('Ajouter_Chambre'); 
+
+
 
 Route::get("/Hôtel/edit/{id}", "HotelController@edit")->name('editer_Hôtel');
 Route::get("/Hôtel/create/{id}", "HotelController@create")->name('Ajouter_Hôtel');
@@ -42,7 +45,12 @@ Route::get("/personne/edit/{id}", "PersonneController@edit")->name('editer_perso
 Route::get("/personne/create/{id}", "PersonneController@create")->name('Ajouter_personne');
 
 Route::get("/reservation/edit/{id}", "ReservationController@edit")->name('editer_reservation');
+Route::get("/reservation/create/{id}", "ReservationController@create")->name('Ajouter_reservation');
+
+
 Route::get("/typechambre/edit/{id}", "TypechambreController@edit")->name('editer_typechambre');
+Route::get("/typechambre/create/{id}", "TypechambreController@create")->name('Ajouter_typechambre');
+
 
 Route::resource('/chambre',"ChambresController");
 Route::resource('/chambre',"ChambresController");
@@ -54,6 +62,11 @@ Route::resource('/typechambre', 'TypechambreController');
 
 Route::resource('/typechambre',"TypechambreController");
 Route::patch("/chambre/edit/{id}", "ChambresController@update")->name('update_chambre');
+Route::get("/Chambre/chambre", "ChambreController@Chambre")->name('chambre');
+
+
+Route::get("/Contact/contact", "ContactController@Contact")->name('contact');
+
 
 Route::patch("/employer/edit/{id}", "EmployerController@update")->name('update_employer');
 Route::patch("/employer/create/{id}", "EmployerController@update")->name('update_employer');

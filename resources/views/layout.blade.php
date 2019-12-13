@@ -20,7 +20,7 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico"> 
+    <link rel="shortcut icon" href="{{asset('images/ico/favicon.ico')}}"> 
 </head> 
 
 <body id="home">
@@ -34,18 +34,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index.html"><img src="{{asset('images/logo.png')}}" alt="logo"></a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="#home">Chambre</a></li>  
+                        <li class="scroll active"><a href="{{route('chambre')}}">Chambre</a></li>  
                         <li class="scroll"><a href="#services">Services</a></li>
                         <li class="scroll"><a href="#about">A Propos</a></li> 
                         <li class="scroll"><a href="#our-team">Notre Equipe</a></li>
 						<li class="scroll"><a href="#portfolio">Portefeuille</a></li>
                         <li class="scroll"><a href="#pricing">Prix</a></li>
-                        <li class="scroll"><a href="#contact-us">Contact</a></li>                        
+                        <li class="scroll"><a href="{{route('contact')}}">Contact</a></li>                        
                     </ul>
                 </div>
             </div><!--/.container-->

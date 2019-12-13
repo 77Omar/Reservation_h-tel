@@ -35,6 +35,7 @@
            </form>
           
        </th>
+       <p><a href="{{route('Ajouter_reservation',['id'=>$reserver->id])}}" class="btn btn-primary">Ajouter</a></p>
    </tr>
 @endforeach
 

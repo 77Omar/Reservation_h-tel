@@ -1,6 +1,5 @@
 
 
-
        <div class="container">
             <form action="{{route('chambre.store')}}" method="post">
                @csrf

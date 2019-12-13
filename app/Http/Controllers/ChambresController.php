@@ -25,7 +25,7 @@ class ChambresController extends Controller
     public function create()
     {
         $chambres= \App\Chambre::orderBy('created_at', 'DESC')->first();
-        $typechambres = \App\Typechambre::pluck('typechambre','id');
+        $typechambres = \App\Typechambre::pluck('chambre_de_luxe','id');
         return view('chambre.create', compact('chambres','typechambres'));
 
     }

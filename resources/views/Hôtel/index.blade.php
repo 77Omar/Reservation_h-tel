@@ -1,3 +1,5 @@
+@extends('layout')
+@section('content')
 
 <table class="table table-striped">
        <tr>
@@ -12,10 +14,9 @@
 
 @foreach($hotel as $hote)
    <tr>
-
-       <img src="{{$hote->images ? asset($hote->images) : asset('uploads/images/default.png')}}" alt="{{$hote->name}}" width="50"></th>
+  
+     
        <th>{{$hote->nom}}</th><th></th><th></th><th></th><th></th><th></th> 
-       <th>{{$hote->adresse}}</th><th></th><th></th><th></th><th></th><th></th> 
        <th>{{$hote->categories}}</th><th></th><th></th><th></th><th></th><th></th>  
        <th>{{$hote->type}}</th><th></th><th></th><th></th><th></th><th></th>  
        <th>{{$hote->nombre_etoile}}</th><th></th><th></th><th></th><th></th><th></th> 
@@ -36,5 +37,5 @@
 
    </table>
    
-
+@endsection
 

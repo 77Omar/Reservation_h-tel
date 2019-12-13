@@ -7,21 +7,21 @@
 				
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-1"></div>
+							<div class="{{asset('bg-img bg-img-1')}}"></div>
 							 
 						</div>
 					</div>
 					
 					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
 						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-2"></div>
+							<div class="{{asset('bg-img bg-img-2')}}"></div>
 							 
 						</div>
 					</div>
 					
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
 						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-3"></div>
+							<div class="{{asset('bg-img bg-img-3')}}"></div>
 							 
 						</div>
 					</div>					
@@ -134,7 +134,7 @@
 
             <div class="row">
                 <div class="col-sm-6 wow fadeInLeft">
-                  <img class="img-responsive" src="images/about.jpg" alt="">
+                  <img class="img-responsive" src="{{asset('images/about.jpg')}}" alt="">
                 </div>
 
                 <div class="col-sm-6 wow fadeInRight">
@@ -178,7 +178,7 @@ OUR TRAINERS
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="images/team/01.jpg" alt="">
+                            <img class="img-responsive" src="{{asset('images/team/01.jpg')}}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Micky Deo</h3>
@@ -195,7 +195,7 @@ OUR TRAINERS
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="images/team/02.jpg" alt="">
+                            <img class="img-responsive" src="{{asset('images/team/02.jpg')}}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Mike Timobbs</h3>
@@ -212,7 +212,7 @@ OUR TRAINERS
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="images/team/03.jpg" alt="">
+                            <img class="img-responsive" src="{{asset('images/team/03.jpg')}}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Remo Silvaus</h3>
@@ -229,7 +229,7 @@ OUR TRAINERS
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="images/team/04.jpg" alt="">
+                            <img class="img-responsive" src="{{asset('images/team/04.jpg')}}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Niscal Deon</h3>
@@ -263,7 +263,7 @@ OUR TRAINERS
 							</div>
 							<div class="row">
 								<div class="col-xs-3">
-									<img src="images/pic1.jpg" alt="client">
+									<img src="{{asset('images/pic1.jpg')}}" alt="client">
 								</div>
 								<div class="col-xs-9 half-gutter">
 									<h5>John Bond</h5>
@@ -281,7 +281,7 @@ OUR TRAINERS
 							</div>
 							<div class="row">
 								<div class="col-xs-3">
-									<img src="images/pic2.jpg" alt="client">
+									<img src="{{asset('images/pic2.jpg')}}" alt="client">
 								</div>
 								<div class="col-xs-9 half-gutter">
 									<h5>John Bond</h5>
@@ -299,7 +299,7 @@ OUR TRAINERS
 							</div>
 							<div class="row">
 								<div class="col-xs-3">
-									<img src="images/pic1.jpg" alt="client">
+									<img src="{{asset('images/pic1.jpg')}}" alt="client">
 								</div>
 								<div class="col-xs-9 half-gutter">
 									<h5>John Bond</h5>
@@ -331,72 +331,72 @@ OUR TRAINERS
             <div class="portfolio-items">
                 <div class="portfolio-item designing">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/01.jpg" alt="">
+                        <img class="img-responsive" src="{{asset('images/portfolio/01.jpg')}}" alt="">
                         <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{asset('images/portfolio/01.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item mobile development">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
+                        <img class="img-responsive" src="{{asset('images/portfolio/02.jpg')}}" alt="">
                         <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{asset('images/portfolio/02.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item designing">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
+                        <img class="img-responsive" src="{{asset('images/portfolio/03.jpg')}}" alt="">
                         <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{asset('images/portfolio/03.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item mobile">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
+                        <img class="img-responsive" src="{{asset('images/portfolio/04.jpg')}}" alt="">
                         <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{asset('images/portfolio/04.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item designing development">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
+                        <img class="img-responsive" src="{{asset('images/portfolio/05.jpg')}}" alt="">
                         <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{asset('images/portfolio/05.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item mobile">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
+                        <img class="img-responsive" src="{{asset('images/portfolio/06.jpg')}}" alt="">
                         <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{asset('images/portfolio/06.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item designing development">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
+                        <img class="img-responsive" src="{{asset('images/portfolio/07.jpg')}}" alt="">
                         <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{asset('images/portfolio/07.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item mobile">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
+                        <img class="img-responsive" src="{{asset('images/portfolio/08.jpg')}}" alt="">
                         <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{asset('images/portfolio/08.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
