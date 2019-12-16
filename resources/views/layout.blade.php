@@ -19,7 +19,7 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif] -->   
     <link rel="shortcut icon" href="{{asset('images/ico/favicon.ico')}}"> 
 </head> 
 
@@ -28,12 +28,7 @@
         <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                   
                     <a class="navbar-brand" href="index.html"><img src="{{asset('images/logo.png')}}" alt="logo"></a>
                 </div>
 				
@@ -41,9 +36,9 @@
                     <ul class="nav navbar-nav">
                         <li class="scroll active"><a href="{{route('chambre')}}">Chambre</a></li>  
                         <li class="scroll"><a href="#services">Services</a></li>
-                        <li class="scroll"><a href="#about">A Propos</a></li> 
+                        <li class="scroll"><a href="{{route('a_propos')}}">A_Propos</a></li> 
                         <li class="scroll"><a href="#our-team">Notre Equipe</a></li>
-						<li class="scroll"><a href="#portfolio">Portefeuille</a></li>
+						<li class="scroll"><a href="{{route('portefeuille')}}">Portefeuille</a></li>
                         <li class="scroll"><a href="#pricing">Prix</a></li>
                         <li class="scroll"><a href="{{route('contact')}}">Contact</a></li>                        
                     </ul>
@@ -58,19 +53,10 @@
     <footer id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
-                    &copy; 2015 Company Name. <a href="https://webthemez.com/free-bootstrap-templates/" target="_blank">Bootstrap Templates</a> By WebThemez
-                </div>
-                <div class="col-sm-6">
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fa fa-github"></i></a></li>
-                    </ul>
-                </div>
+                
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> <span style="color:#b69100;">Golden Hôtel</span> | Tous droits réservés.
+              
+               
             </div>
         </div>
     </footer><!--/#footer-->

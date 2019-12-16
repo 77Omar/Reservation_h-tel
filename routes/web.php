@@ -62,10 +62,13 @@ Route::resource('/typechambre', 'TypechambreController');
 
 Route::resource('/typechambre',"TypechambreController");
 Route::patch("/chambre/edit/{id}", "ChambresController@update")->name('update_chambre');
+
+
 Route::get("/Chambre/chambre", "ChambreController@Chambre")->name('chambre');
-
-
 Route::get("/Contact/contact", "ContactController@Contact")->name('contact');
+Route::get("/Portefeuille/portefeuille", "PortefeuilleController@Portefeuille")->name('portefeuille');
+Route::get("/A_Propos/a_propos", "A_ProposController@A_Propos")->name('a_propos');
+
 
 
 Route::patch("/employer/edit/{id}", "EmployerController@update")->name('update_employer');
