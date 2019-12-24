@@ -1936,6 +1936,14 @@ bottom:120px;
 	}
 
 }
+
+#portfolio {
+
+  display: flex;
+  justify-content: space-around;
+
+}
+
 /*!
  * Bootstrap v3.3.1 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.

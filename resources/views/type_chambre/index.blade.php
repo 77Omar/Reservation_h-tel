@@ -1,4 +1,5 @@
-
+@extends('layout')
+@section('content')
 <table class="table table-striped">
        <tr>
         
@@ -27,9 +28,11 @@
            </form>
 
        </th>
-       <p><a href="{{route('Ajouter_typechambre',['id'=>$Type->id])}}" class="btn btn-primary">Ajouter</a></p>
-   </tr>
+      
 @endforeach
 
 
    </table>
+
+   <p><a href="{{route('Ajouter_typechambre',['id'=>$Type->id])}}" class="btn btn-primary">Ajouter</a></p>
+@endsection

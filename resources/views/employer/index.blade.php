@@ -1,3 +1,6 @@
+@extends('layout')
+@section('content')
+
 <table class="table table-striped">
        <tr>  
              <th>.Type</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th>      
@@ -7,7 +10,7 @@
     
 @foreach($employer as $emploie)
    <tr>
-
+   <img src="{{$emploie->images ? asset($emploie->images) : asset('uploads/images/default.png')}}" alt="{{$emploie->name}}" width="100"></th> 
        <img src="{{$emploie->images ? asset($emploie->images) : asset('uploads/images/default.png')}}" alt="{{$emploie->name}}" width="100"></th>
        <th>{{$emploie->Type}}</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th>  
        <th>{{$emploie->Grade}}</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th>  
@@ -23,10 +26,12 @@
            </form>
 
        </th>
-       <p><a href="{{route('Ajouter_employer',['id'=>$emploie->id])}}" class="btn btn-primary">Ajouter</a></p>
+     
    </tr>
 @endforeach
 
 
 
    </table>
+   <p><a href="{{route('Ajouter_employer',['id'=>$emploie->id])}}" class="btn btn-primary">Ajouter</a></p>
+   @endsection

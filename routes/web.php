@@ -23,9 +23,9 @@ Route::get('/categories',"categoriescontroller@index");
 Route::get("/categories/{id}","categoriescontroller@show");
 */
 
-//Route::get('/',"HomeController@index");
+Route::get('/',"HomeController@index");
 
-Route::get("/Reservation/{id}","HomeController@show");
+Route::get("/Reservation/{id}","HomeController@show")->where(['id'=>'[0-9]{10}']);
 
 Route::resource('/chambre',"ChambresController");
 Route::get("/chambre/edit/{id}", "ChambresController@edit")->name('editer_Chambre'); 
@@ -38,7 +38,7 @@ Route::get("/Hôtel/create/{id}", "HotelController@create")->name('Ajouter_Hôte
 
 
 Route::get("/employer/edit/{id}", "EmployerController@edit")->name('editer_employer');
-Route::get("/employer/create/{id}", "EmployerController@edit")->name('Ajouter_employer');
+Route::get("/employer/create/{id}", "EmployerController@create")->name('Ajouter_employer');
 
 
 Route::get("/personne/edit/{id}", "PersonneController@edit")->name('editer_personne');
@@ -52,13 +52,24 @@ Route::get("/typechambre/edit/{id}", "TypechambreController@edit")->name('editer
 Route::get("/typechambre/create/{id}", "TypechambreController@create")->name('Ajouter_typechambre');
 
 
-Route::resource('/chambre',"ChambresController");
+Route::resource('contact', 'ContactsController');
+Route::get("/contact/edit/{id}", "ContactsController@edit")->name('editer_contact');
+Route::get("/contact/create/{id}", "ContactsController@create")->name('Ajouter_contact');
+
+
+
+//Route::resource('/chambre',"ChambresController");
 Route::resource('/chambre',"ChambresController");
 Route::resource('/Hôtel',"HotelController");
 Route::resource('/employer', 'EmployerController');
 Route::resource('/personne', 'PersonneController');
 Route::resource('/reservation', 'ReservationController');
-Route::resource('/typechambre', 'TypechambreController');
+Route::resource('/typechambre', 'TypechambreController'); 
+
+Route::resource('contact', 'ContactsController');
+
+
+
 
 Route::resource('/typechambre',"TypechambreController");
 Route::patch("/chambre/edit/{id}", "ChambresController@update")->name('update_chambre');
@@ -66,8 +77,14 @@ Route::patch("/chambre/edit/{id}", "ChambresController@update")->name('update_ch
 
 Route::get("/Chambre/chambre", "ChambreController@Chambre")->name('chambre');
 Route::get("/Contact/contact", "ContactController@Contact")->name('contact');
+Route::post("/Contact/contact", "ContactController@store")->name('contact-store');
 Route::get("/Portefeuille/portefeuille", "PortefeuilleController@Portefeuille")->name('portefeuille');
 Route::get("/A_Propos/a_propos", "A_ProposController@A_Propos")->name('a_propos');
+Route::get("/Service/service", "ServiceController@Service")->name('service');
+Route::get("/Notre_Equipe/notre_equipe", "Notre_EquipeController@Notre_Equipe")->name('notre_equipe');
+
+Route::get("/Reservation/reservation", "ReservationController@reservation")->name('reservation');
+
 
 
 

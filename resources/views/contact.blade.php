@@ -25,18 +25,19 @@
                     <div class="col-sm-8 col-md-8">
                         <div class="contact-form">
                        
-                            <form id="main-contact-form" name="contact-form" method="post" action="#">
+                            <form id="main-contact-form" name="contact-form" method="post" action="/Contact/contact">
+                                @csrf
                                 <div class="form-group">
-                                    <input type="text" name="nom" class="form-control" placeholder="Nom" required>
+                                    <input type="text" name="Nom" class="form-control" placeholder="Nom" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                    <input type="Email" name="Email" class="form-control" placeholder="Email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="objet" class="form-control" placeholder="Objet" required>
+                                    <input type="text" name="Objet" class="form-control" placeholder="Objet" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
+                                    <textarea name="Message" class="form-control" rows="8" placeholder="Message" required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Envoyer un message</button>
                             </form>

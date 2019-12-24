@@ -1,5 +1,16 @@
 @extends('layout')
 @section('content')
+
+<div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{{asset('images/portfolio/13.jpg')}}" alt="">
+                        <div class="portfolio-info"> 
+                            <a class="preview" href="{{asset('images/portfolio/13.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+    
+
     <section class="demo-2">
            <div id="slider" class="sl-slider-wrapper">
 
@@ -36,6 +47,7 @@
 			</div><!-- /slider-wrapper -->
 
     </section><!--/#main-slider-->
+
 
  <section id="services" >
         <div class="container">
@@ -167,9 +179,7 @@
      <section id="our-team">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title wow fadeInDown">
-OUR TRAINERS
-</h2>
+                <h2 class="section-title wow fadeInDown">OUR TRAINERS</h2>
 <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p> 
             </div>
 			
@@ -403,126 +413,139 @@ OUR TRAINERS
             </div>
         </div><!--/.container-->
     </section><!--/#portfolio-->
+<!--reservation-->
+   <!-- Booking -->
+	<section class="section-booking bg1-pattern p-t-100 p-b-110">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 p-b-30">
+					<div class="t-center">
+						<span class="tit2 t-center">
+                        
+							<h1>Reservation</h1>
+						</span>
 
-    <section id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Pricing</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
+						<h3 class="tit3 t-center m-b-35 m-t-2">
+							Book table
+						</h3>
+					</div>
 
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $45
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
+					<form class="wrap-form-booking">
+						<div class="row">
+							<div class="col-md-6">
+								<!-- Date -->
+								<span class="txt9">
+									Date
+								</span>
 
-                                <div class="plan-name">
-                                    Basic
-                                </div>
-                            </li>
-                            <li><strong>1</strong> DOMAIN</li>
-                            <li><strong>100GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>10</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <ul class="pricing featured">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $85
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
+								<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="date">
+									<i class="btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18" aria-hidden="true"></i>
+								</div>
 
-                                <div class="plan-name">
-                                    Bronze
-                                </div>
-                            </li>
-                            <li><strong>5</strong> DOMAIN</li>
-                            <li><strong>500GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>30</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $125
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
+								<!-- Time -->
+								<span class="txt9">
+									Time
+								</span>
 
-                                <div class="plan-name">
-                                    Silver
-                                </div>
-                            </li>
-                            <li><strong>10</strong> DOMAIN</li>
-                            <li><strong>2GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>50</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $185
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
+								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<!-- Select2 -->
+									<select class="selection-1" name="time">
+										<option>9:00</option>
+										<option>9:30</option>
+										<option>10:00</option>
+										<option>10:30</option>
+										<option>11:00</option>
+										<option>11:30</option>
+										<option>12:00</option>
+										<option>12:30</option>
+										<option>13:00</option>
+										<option>13:30</option>
+										<option>14:00</option>
+										<option>14:30</option>
+										<option>15:00</option>
+										<option>15:30</option>
+										<option>16:00</option>
+										<option>16:30</option>
+										<option>17:00</option>
+										<option>17:30</option>
+										<option>18:00</option>
+									</select>
+								</div>
 
-                                <div class="plan-name">
-                                    Gold
-                                </div>
-                            </li>
-                            <li><strong>15</strong> DOMAIN</li>
-                            <li><strong>10GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>100</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!--/#pricing-->
+								<!-- People -->
+								<span class="txt9">
+									People
+								</span>
+
+								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<!-- Select2 -->
+									 <select class="selection-1" name="people">
+										<option>1 person</option>
+										<option>2 people</option>
+										<option>3 people</option>
+										<option>4 people</option>
+										<option>5 people</option>
+										<option>6 people</option>
+										<option>7 people</option>
+										<option>8 people</option>
+										<option>9 people</option>
+										<option>10 people</option>
+										<option>11 people</option>
+										<option>12 people</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<!-- Name -->
+								<span class="txt9">
+									Name
+								</span>
+
+								<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="name" placeholder="Name">
+								</div>
+
+								<!-- Phone -->
+								 <span class="txt9">
+									Phone
+								</span>
+
+								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone" placeholder="Phone">
+								</div>
+
+								<!-- Email -->
+								 <span class="txt9">
+									Email
+								</span>
+
+								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email">
+								</div>
+							</div>
+						</div>
+
+						<div class="wrap-btn-booking flex-c-m m-t-6">
+							<!-- Button3 -->
+							 <button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
+								Book Table
+							</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="col-lg-20 p-b-30 p-t-18">
+					<div class="wrap-pic-booking size2 bo-rad-10 hov-img-zoom m-l-r-auto">
+						<img src="{{asset('images/booking-01.jpg')}}" alt="IMG-OUR">
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+    <!--/#reservation-->
    
    
 

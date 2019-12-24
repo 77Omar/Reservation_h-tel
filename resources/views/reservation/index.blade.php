@@ -17,7 +17,7 @@
 @foreach($reservation as $reserver)
    <tr>
 
-   <img src="{{$reserver->images ? asset($reserver->images) : asset('uploads/images/default.png')}}" alt="{{$reserver->name}}" width="100"></th>
+   <img src="{{$reserver->images ? asset($reserver->images) : asset('uploads/images/default.png')}}" alt="{{$reserver->name}}" width="100"></th> 
        <th>{{$reserver->nom_du_client}}</th><th></th><th></th><th></th><th></th><th></th> 
        <th>{{$reserver->prenom_du_client}}</th><th></th><th></th><th></th><th></th><th></th> 
        <th>{{$reserver->date_arrivé}}</th><th></th><th></th><th></th><th></th><th></th>  
@@ -35,9 +35,10 @@
            </form>
           
        </th>
-       <p><a href="{{route('Ajouter_reservation',['id'=>$reserver->id])}}" class="btn btn-primary">Ajouter</a></p>
+ 
    </tr>
 @endforeach
 
    </table>
+   <p><a href="{{route('Ajouter_reservation',['id'=>$reserver->id])}}" class="btn btn-primary">Ajouter</a></p>
 @endsection

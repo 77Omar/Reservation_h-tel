@@ -19,18 +19,18 @@
             <div class="portfolio-items">
                 <div class="portfolio-item designing">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="{{asset('images/portfolio/01.jpg')}}" alt="">
+                        <img class="img-responsive" src="{{asset('images/portfolio/30.jpg')}}" alt="">
                         <div class="portfolio-info"> 
-                            <a class="preview" href="{{asset('images/portfolio/01.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{asset('images/portfolio/30.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item mobile development">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="{{asset('images/portfolio/02.jpg')}}" alt="">
+                        <img class="img-responsive" src="{{asset('images/portfolio/31.jpg')}}" alt="">
                         <div class="portfolio-info"> 
-                            <a class="preview" href="{{asset('images/portfolio/02.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{asset('images/portfolio/31.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -73,18 +73,18 @@
 
                 <div class="portfolio-item designing development">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="{{asset('images/portfolio/07.jpg')}}" alt="">
+                        <img class="img-responsive" src="{{asset('images/portfolio/015.jpg')}}" alt="">
                         <div class="portfolio-info"> 
-                            <a class="preview" href="{{asset('images/portfolio/07.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{asset('images/portfolio/015.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item mobile">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="{{asset('images/portfolio/08.jpg')}}" alt="">
+                        <img class="img-responsive" src="{{asset('images/portfolio/32.jpg')}}" alt="">
                         <div class="portfolio-info"> 
-                            <a class="preview" href="{{asset('images/portfolio/08.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{asset('images/portfolio/32.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->

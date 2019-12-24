@@ -35,11 +35,11 @@ class EmployerController extends Controller
      */
     public function store(Request $request)
     {
-        $employer = new \App\Employer();
-        $employer->Type = $request->input('Type');
-        $employer->Grade = $request->input('Grade');
-        $employer->Chambre = $request->input('Chambre');
-        $employer->save();
+        $emploie = new \App\Employer();
+        $emploie->Type = $request->input('Type');
+        $emploie->Grade = $request->input('Grade');
+        $emploie->Chambre = $request->input('Chambre');
+        $emploie->save();
         return redirect('/');
      
     }
@@ -63,7 +63,7 @@ class EmployerController extends Controller
      */
     public function edit($id)
     {
-        $employer = \App\Employer::find($id);//on recupere le produit
+        $employer = \App\Employer::find($id);//on recupere
         return view('employer.edit', compact('employer'));
     }
 

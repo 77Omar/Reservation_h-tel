@@ -6,6 +6,13 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+
+    public function show($id)
+    {
+        //
+    }
+
+
     /**
      * Create a new controller instance.
      *

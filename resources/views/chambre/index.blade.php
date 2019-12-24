@@ -34,12 +34,12 @@
            </form>
 
        </th>
-       <p><a href="{{route('Ajouter_Chambre',['id'=>$chambre->id])}}" class="btn btn-primary">Ajouter</a></p>
+       
+   
    </tr>
 @endforeach
 
 </table>
+<p><a href="{{route('Ajouter_Chambre',['id'=>$chambre->id])}}" class="btn btn-primary">Ajouter</a></p>
 
-</body>
-</html>
 @endsection

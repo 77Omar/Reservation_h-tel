@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TypechambreController extends Controller
+class ContactsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,10 +13,10 @@ class TypechambreController extends Controller
      */
     public function index()
     {
-        $typechambre= \App\Typechambre::orderBy('created_at', 'DESC')->get();
-        return view('type_chambre.index', compact('typechambre'));
-      }
-    
+        $contact = \App\Contact::orderBy('created_at', 'DESC')->get();
+        return view('contact.index', compact('contact'));
+     
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -25,7 +25,8 @@ class TypechambreController extends Controller
      */
     public function create()
     {
-        return view('type_chambre.create');
+        return view('contact.create');
+
     }
 
     /**
@@ -36,13 +37,14 @@ class TypechambreController extends Controller
      */
     public function store(Request $request)
     {
-        $Type = new \App\Typechambre();
-        $Type->chambre_de_luxe = $request->input('chambre_de_luxe');
-        $Type->chambre_de_famille = $request->input('chambre_de_famille');
-        $Type->chambre_superieur = $request->input('chambre_superieur');
         
+        $contacter = new \App\Contact();
+        $contacter->Nom = $request->input('Nom');
+        $contacter->Email = $request->input('Email');
+        $contacter->Objet = $request->input('Objet');
+        $contacter->Message = $request->input('Message');
 
-        $Type->save();
+        $contacter->save();
         return redirect('/');
      
     }
@@ -55,7 +57,7 @@ class TypechambreController extends Controller
      */
     public function show($id)
     {
-        
+        //
     }
 
     /**
@@ -66,8 +68,9 @@ class TypechambreController extends Controller
      */
     public function edit($id)
     {
-        $typechambre = \App\Typechambre::find($id);//on recupere
-        return view('type_chambre.edit', compact('typechambre'));
+        
+        $contact = \App\Contact::find($id);//on recupere
+        return view('contact.edit', compact('contact'));
     }
 
     /**
@@ -79,18 +82,17 @@ class TypechambreController extends Controller
      */
     public function update(Request $request, $id)
     {
-            
-   $typechambre = \App\Typechambre::find($id);
-   if($typechambre){
-       $typechambre->update([
-           'chambre_de_luxe' => $request->input('chambre_de_luxe'),
-           'chambre_de_famille' => $request->input('chambre_de_famille'),
-           'chambre_superieur' => $request->input('chambre_superieur'),
-
+              
+   $contact = \App\Contact::find($id);
+   if($contact){
+       $contact->update([
+           'Nom' => $request->input('Nom'),
+           'Email' => $request->input('Email'),
+           'Objet' => $request->input('Objet'),
+           'Message' => $request->input('Message'),
        ]);
    }
    return redirect()->back();
-
     }
 
     /**
@@ -101,9 +103,6 @@ class TypechambreController extends Controller
      */
     public function destroy($id)
     {
-        $typechambre = \App\Typechambre::find($id);
-        if($typechambre)
-            $typechambre->delete();
-        return redirect()->route('typechambre.index');
+        //
     }
 }
