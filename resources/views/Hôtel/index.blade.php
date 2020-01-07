@@ -17,13 +17,12 @@
   
    <img src="{{$hote->images ? asset($hote->images) : asset('uploads/images/default.png')}}" alt="{{$hote->name}}" width="100"></th> 
        <th>{{$hote->nom}}</th><th></th><th></th><th></th><th></th><th></th> 
+       <th>{{$hote->adresse}}</th><th></th><th></th><th></th><th></th><th></th> 
        <th>{{$hote->categories}}</th><th></th><th></th><th></th><th></th><th></th>  
        <th>{{$hote->type}}</th><th></th><th></th><th></th><th></th><th></th>  
        <th>{{$hote->nombre_etoile}}</th><th></th><th></th><th></th><th></th><th></th> 
        <th>
            <p><a href="{{route('editer_Hôtel',['id'=>$hote->id])}}" class="btn btn-primary">Editer</a></p>
-           
-
            <form action="hotel/{{$hote->id}}" method="post">
                @csrf
                @method('delete')
