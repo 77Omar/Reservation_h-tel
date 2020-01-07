@@ -43,14 +43,14 @@ class ReservationController extends Controller
      */
     public function store(Request $request)
     {
-        $reserver = new \App\Reservation();
-        $reserver->nom_du_client = $request->input('nom_du_client');
-        $reserver->prenom_du_client = $request->input('prenom_du_client');
-        $reserver->date_arrivé = $request->input('date_arrivé');
-        $reserver->date_depart = $request->input('date_depart');
-        $reserver->Nbr_nuit = $request->input('Nbr_nuit');
-        $reserver->statu = $request->input('statu');
-        $reserver->save();
+        $Reservation = new \App\Reservation();
+        $Reservation->nom_du_client = $request->input('nom_du_client');
+        $Reservation->prenom_du_client = $request->input('prenom_du_client');
+        $Reservation->date_arrivé = $request->input('date_arrivé');
+        $Reservation->date_depart = $request->input('date_depart');
+        $Reservation->Nbr_nuit = $request->input('Nbr_nuit');
+        $Reservation->statu = $request->input('statu');
+        $Reservation->save();
 
        return redirect('/');
 

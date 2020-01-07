@@ -39,7 +39,7 @@
                                 <div class="form-group">
                                     <textarea name="Message" class="form-control" rows="8" placeholder="Message" required></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Envoyer un message</button>
+                               
                             </form>
                         </div>
                     </div>

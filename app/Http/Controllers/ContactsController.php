@@ -103,6 +103,10 @@ class ContactsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $contact = \App\Contact::find($id);
+        if($contact)
+            $contact->delete();
+        return redirect()->route('contact.index');
+     
     }
 }

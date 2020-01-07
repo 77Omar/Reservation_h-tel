@@ -27,6 +27,7 @@ Route::get('/',"HomeController@index");
 
 Route::get("/Reservation/{id}","HomeController@show")->where(['id'=>'[0-9]{10}']);
 
+
 Route::resource('/chambre',"ChambresController");
 Route::get("/chambre/edit/{id}", "ChambresController@edit")->name('editer_Chambre'); 
 Route::get("/chambre/create/{id}", "ChambresController@create")->name('Ajouter_Chambre'); 
@@ -76,16 +77,16 @@ Route::patch("/chambre/edit/{id}", "ChambresController@update")->name('update_ch
 
 
 Route::get("/Chambre/chambre", "ChambreController@Chambre")->name('chambre');
-Route::get("/Contact/contact", "ContactController@Contact")->name('contact');
+Route::get("/Contact/contact", "ContactController@contact")->name('contact');
 Route::post("/Contact/contact", "ContactController@store")->name('contact-store');
+
 Route::get("/Portefeuille/portefeuille", "PortefeuilleController@Portefeuille")->name('portefeuille');
 Route::get("/A_Propos/a_propos", "A_ProposController@A_Propos")->name('a_propos');
 Route::get("/Service/service", "ServiceController@Service")->name('service');
 Route::get("/Notre_Equipe/notre_equipe", "Notre_EquipeController@Notre_Equipe")->name('notre_equipe');
 
 Route::get("/Reservation/reservation", "ReservationController@reservation")->name('reservation');
-
-
+Route::post("/Reservation/reservation", "ReservationController@store")->name('reservation-store');
 
 
 Route::patch("/employer/edit/{id}", "EmployerController@update")->name('update_employer');
