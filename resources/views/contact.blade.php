@@ -39,7 +39,12 @@
                                 <div class="form-group">
                                     <textarea name="Message" class="form-control" rows="8" placeholder="Message" required></textarea>
                                 </div>
-                               
+                            
+                                <div class="wrap-btn-booking flex-c-m m-t-6">
+							<!-- Button3 -->
+							<button type="submit" class="btn btn-primary">Envoyer</button>
+						      </div>
+
                             </form>
                         </div>
                     </div>
