@@ -1,5 +1,6 @@
-@extends('layout')
+@extends('menu')
 @section('content')
+<br><br><br><br>
  <table class="table table-striped">
        <tr>
         
@@ -14,7 +15,7 @@
 
    <tr>
   
-       <img src="{{$person->images ? asset($person->images) : asset('uploads/images/default.png')}}" alt="{{$person->name}}" width="100"></th> 
+       <!--<img src="{{$person->images ? asset($person->images) : asset('uploads/images/default.png')}}" alt="{{$person->name}}" width="100"></th> -->
        <th>{{$person->Nom}}</th><th></th><th></th><th></th><th></th><th></th> 
        <th>{{$person->Prenom}}</th><th></th><th></th><th></th><th></th><th></th> 
        <th>{{$person->Adresse}}</th><th></th><th></th><th></th><th></th><th></th>  

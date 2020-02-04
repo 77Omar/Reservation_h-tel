@@ -1,5 +1,8 @@
 
-
+@extends('menu')
+@extends('menu')
+@section('content')
+<br><br><br><br>
        <div class="container">
             <form action="{{route('chambre.store')}}" method="post">
                @csrf
@@ -34,3 +37,4 @@
                    <button class="btn btn-primary">Enregistrer</button>
                </div>
            </form>
+@endsection

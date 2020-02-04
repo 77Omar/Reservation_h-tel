@@ -1,8 +1,8 @@
-@extends('layout')
+@extends('menu')
 @section('content')
 
 
-
+<br><br><br><br>
 <table class="table table-striped">
     <tr>
 
@@ -16,7 +16,7 @@
 @foreach($contact as $contacter)
    <tr>
 
-   <img src="{{$contacter->images ? asset($contacter->images) : asset('uploads/images/default.png')}}" alt="{{$contacter->name}}" width="100"></th>
+  <!-- <img src="{{$contacter->images ? asset($contacter->images) : asset('uploads/images/default.png')}}" alt="{{$contacter->name}}" width="100"></th>-->
        <th>{{$contacter->Nom}}</th><th></th><th></th><th></th><th></th><th></th>  
        <th>{{$contacter->Email}}</th><th></th><th></th><th></th><th></th><th></th> 
        <th>{{$contacter->Objet}}</th><th></th><th></th><th></th><th></th><th></th>   

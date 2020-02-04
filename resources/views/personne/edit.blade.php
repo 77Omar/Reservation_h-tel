@@ -1,3 +1,6 @@
+@extends('menu')
+@section('content')
+<br><br><br><br><br>
 <form action="{{route('personne.update',['id'=>$personne->id])}}" method="post">
    @csrf
    @method('patch')
@@ -8,3 +11,4 @@
    <div> <textarea name="email" id="email" cols="30" rows="10" class="form-control" placeholder="email du personne">{{$personne->email}}</textarea> </div>
    <div> <button class="btn btn-primary">Enregistrement</button> </div>
 </form>
+@endsection

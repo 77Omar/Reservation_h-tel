@@ -1,3 +1,6 @@
+@extends('menu')
+@section('content')
+<br><br><br><br>
 <form action="{{route('Hôtel.update',['id'=>$hotel->id])}}" method="post">
    @csrf
    @method('patch')
@@ -20,3 +23,4 @@
                    <button class="btn btn-primary">Enregistrements</button>
                </div>
 </form>
+@endsection

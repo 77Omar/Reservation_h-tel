@@ -1,7 +1,6 @@
-@extends('layout')
+@extends('menu')
 @section('content')
-
-
+<br><br><br><br>
 <table class="table table-striped">
        <tr>
            <th>.Nom du client</th><th></th><th></th><th></th><th></th><th></th>
@@ -17,7 +16,7 @@
 @foreach($reservation as $reserver)
    <tr>
 
-   <img src="{{$reserver->images ? asset($reserver->images) : asset('uploads/images/default.png')}}" alt="{{$reserver->name}}" width="100"></th> 
+  <!-- <img src="{{$reserver->images ? asset($reserver->images) : asset('uploads/images/default.png')}}" alt="{{$reserver->name}}" width="100"></th> -->
        <th>{{$reserver->nom_du_client}}</th><th></th><th></th><th></th><th></th><th></th> 
        <th>{{$reserver->prenom_du_client}}</th><th></th><th></th><th></th><th></th><th></th> 
        <th>{{$reserver->date_arrivé}}</th><th></th><th></th><th></th><th></th><th></th>  

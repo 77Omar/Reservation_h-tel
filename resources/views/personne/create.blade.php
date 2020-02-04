@@ -1,5 +1,7 @@
 
-
+@extends('menu')
+@section('content')
+<br><br><br><br>
 <div class="container">
 <div><h1>{{('Sauvegarder les informations')}}</h1></div>
 
@@ -22,3 +24,4 @@
                    <button class="btn btn-primary">Enregistrements</button>
                </div>
            </form>
+@endsection

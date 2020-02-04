@@ -1,3 +1,6 @@
+@extends('menu')
+@section('content')
+<br><br><br><br>
 <form action="{{route('typechambre.update',['id'=>$typechambre->id])}}" method="post">
    @csrf
    @method('patch')
@@ -10,3 +13,4 @@
    <div> <textarea name="chambre_superieur" id="chambre_superieur" cols="30" rows="10" class="form-control" placeholder="chambre superieur">{{$typechambre->chambre_superieur}}</textarea> </div>
    <div> <button class="btn btn-primary">Enregistrement</button> </div>
 </form>
+@endsection

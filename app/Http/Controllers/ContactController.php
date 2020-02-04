@@ -24,9 +24,9 @@ class ContactController extends Controller
             return redirect('/');
          
 
-         Mail::to('test@test.com')->send(new ContactMail(@data));
+         Mail::to('administrateur@chezmoi.com')->send(new Contact($request->except('_token')));
 
-         return redirect('contact')->with('message','Votre message a bien été envoyé.');
+         return view('confirm')->with('message','Votre message a bien été envoyé.');
         }
 }
 

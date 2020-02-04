@@ -1,4 +1,7 @@
-
+@extends('menu')
+@extends('menu')
+@section('content')
+<br><br><br><br><br>
 
 <form action="{{route('update_chambre',['id'=>$chambres->id])}}
 " method="post">
@@ -30,3 +33,4 @@
                    <button class="btn btn-primary">Enregistrer</button>
                </div>
    </form>
+@endsection

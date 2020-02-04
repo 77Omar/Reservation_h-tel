@@ -1,3 +1,6 @@
+@extends('menu')
+@section('content')
+<br><br><br><br>
 <form action="{{route('update_reservation',['id'=>$reservation->id])}}
 " method="post">
    @csrf
@@ -10,3 +13,4 @@
    <div> <textarea name="statu" id="statu" cols="30" rows="10" class="form-control" placeholder="statu">{{$reservation->statu}}</textarea> </div>
    <div> <button class="btn btn-primary">Enregistrement des clients</button> </div>
 </form>
+@endsection

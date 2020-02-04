@@ -34,14 +34,14 @@
                 <div class="collapse navbar-collapse navbar-right">
                 
                     <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="{{route('chambre')}}">Chambre</a></li>  
+                       <!-- <li class="scroll active"><a href="{{route('chambre')}}">Chambre</a></li>  
                         <li class="scroll"><a href="{{route('service')}}">Services</a></li>
                         <li class="scroll"><a href="{{route('a_propos')}}">A propos</a></li>
                         <li class="scroll"><a href="{{route('notre_equipe')}}">Notre_Equipe</a></li>
 					            	<li class="scroll"><a href="{{route('portefeuille')}}">Portefeuille</a></li>
                         <li class="scroll"><a href="{{route('reservation')}}">Reservation</a></li>
                         <li class="scroll"><a href="{{route('contact')}}">Contact</a></li> 
-                        <li class="scroll"><a href="{{route('login')}}">Connecter</a></li> 
+                        <li class="scroll"><a href="{{route('login')}}">Connecter</a></li> -->
                         
                       <!--  <li><a href="{{route('login')}}">Se connecter</a></li> -->
                        @guest
@@ -107,14 +107,10 @@
             </div><!--/.container-->
         </nav><!--/nav-->
     </header><!--/header-->
-    
-
-
     @yield('content')
 
-
     	<!-- Footer -->
-<footer class="page-footer font-small unique-color-dark">
+        <footer class="page-footer font-small unique-color-dark">
 
 <div style="background-color: #6351ce;">
   <div class="container">

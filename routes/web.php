@@ -11,8 +11,9 @@
 |
 */
 Route::get('/', function () {
-    return view('home');
+    return view('home1');
 });
+//->middleware ('auth');
 
 /*
 /
@@ -23,7 +24,7 @@ Route::get('/categories',"categoriescontroller@index");
 Route::get("/categories/{id}","categoriescontroller@show");
 */
 
-Route::get('/',"HomeController@index");
+//Route::get('/',"HomeController@index");
 
 Route::get("/Reservation/{id}","HomeController@show")->where(['id'=>'[0-9]{10}']);
 
@@ -84,6 +85,8 @@ Route::get("/Portefeuille/portefeuille", "PortefeuilleController@Portefeuille")-
 Route::get("/A_Propos/a_propos", "A_ProposController@A_Propos")->name('a_propos');
 Route::get("/Service/service", "ServiceController@Service")->name('service');
 Route::get("/Notre_Equipe/notre_equipe", "Notre_EquipeController@Notre_Equipe")->name('notre_equipe');
+Route::get("/PageAdmin/pageadmin", "PageAdminController@PageAdmin")->name('pageadmin');
+
 
 Route::get("/Reservation/reservation", "ReservationController@reservation")->name('reservation');
 Route::post("/Reservation/reservation", "ReservationController@store")->name('reservation-store');
@@ -98,10 +101,28 @@ Route::patch("/Hôtel/create/{id}", "HotelController@update")->name('update_Hôt
 
 Route::patch("/personne/edit/{id}", "PersonneController@update")->name('update_Hôtel');
 Route::patch("/personne/create/{id}", "PersonneController@update")->name('update_Hôtel');
-
-
 Route::patch("/typechambre/edit/{id}", "TypechambreController@update")->name('update_typechambre');
 
-Auth::routes();
+
+Route::get('/chambre/create', 'ChambresController@create')->name('create_chambre')->middleware('auth');
+Route::get('/reservation/create', 'ReservationController@create')->name('create_reservation')->middleware('auth');
+Route::get('/Hôtel/create', 'HotelController@create')->name('create_Hôtel')->middleware('auth');
+
+
+//Auth::routes();
+
+//Route::get('/home', 'HomeController@index')->name('home');
+
+
+//Route::view('/login','auth.login')->name('login');
+
+Route::get('/abonnement/expired', "AbonnementController@expired");
+
+Auth::routes(['verify'=>true]);
+//Route::get('/welcome', 'HomeController@index')->name('welcome');;;
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('profile', function () {
+    //Only verified users may enter...
+})->middleware('verified');

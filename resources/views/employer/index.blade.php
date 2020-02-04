@@ -1,6 +1,6 @@
-@extends('layout')
+@extends('menu')
 @section('content')
-
+<br><br><br><br>
 <table class="table table-striped">
        <tr>  
              <th>.Type</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th>      
@@ -10,8 +10,8 @@
     
 @foreach($employer as $emploie)
    <tr>
-   <img src="{{$emploie->images ? asset($emploie->images) : asset('uploads/images/default.png')}}" alt="{{$emploie->name}}" width="100"></th> 
-       <img src="{{$emploie->images ? asset($emploie->images) : asset('uploads/images/default.png')}}" alt="{{$emploie->name}}" width="100"></th>
+   <!--<img src="{{$emploie->images ? asset($emploie->images) : asset('uploads/images/default.png')}}" alt="{{$emploie->name}}" width="100"></th>-->
+      
        <th>{{$emploie->Type}}</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th>  
        <th>{{$emploie->Grade}}</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th>  
        <th>{{$emploie->Chambre}}</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th>   

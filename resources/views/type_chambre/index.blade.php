@@ -1,5 +1,7 @@
-@extends('layout')
+@extends('menu')
 @section('content')
+
+<br><br><br><br>
 <table class="table table-striped">
        <tr>
         
@@ -13,7 +15,7 @@
 @foreach($typechambre as $Type)
    <tr>
 
-       <img src="{{$Type->images ? asset($Type->images) : asset('uploads/images/default.png')}}" alt="{{$Type->name}}" width="100"></th>
+      <!-- <img src="{{$Type->images ? asset($Type->images) : asset('uploads/images/default.png')}}" alt="{{$Type->name}}" width="100"></th>-->
        <th>{{$Type->chambre_de_luxe}}</th><th></th><th></th><th></th><th></th><th></th> 
        <th>{{$Type->chambre_de_famille}}</th><th></th><th></th><th></th><th></th><th></th> 
        <th>{{$Type->chambre_superieur}}</th><th></th><th></th><th></th><th></th><th></th>  

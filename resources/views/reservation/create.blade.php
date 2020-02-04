@@ -1,5 +1,6 @@
-@extends('layout')
+@extends('menu')
 @section('content')
+<br><br><br><br>
 <!-- Booking -->
 <section class="section-booking bg1-pattern p-t-100 p-b-110">
 		<div class="container">

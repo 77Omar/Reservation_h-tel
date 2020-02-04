@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 
 class ChambresController extends Controller
@@ -13,6 +14,7 @@ class ChambresController extends Controller
      */
     public function index()
     {
+       
         $chambres= \App\Chambre::orderBy('created_at', 'DESC')->get();
         return view('chambre.index', compact('chambres'));
     }
@@ -72,6 +74,8 @@ class ChambresController extends Controller
      */
     public function edit($id)
     {
+    
+
             $chambres = \App\Chambre::find($id);//on recupere
             return view('chambre.edit', compact('chambres'));
 

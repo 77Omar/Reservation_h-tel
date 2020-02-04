@@ -103,6 +103,6 @@ class HotelController extends Controller
         if($hotel)
             $hotel->delete();
         return redirect()->route('Hôtel.index');
-     
     }
 }
+

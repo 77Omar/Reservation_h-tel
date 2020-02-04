@@ -1,5 +1,6 @@
 @extends('layout')
 @section('content')
+<br><br>
 <section id="about">
         <div class="container">
 
