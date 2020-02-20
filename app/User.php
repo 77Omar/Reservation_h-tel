@@ -43,5 +43,13 @@ class User extends Authenticatable
 
     /**Cette méthode va determiner si le user connecté a un role admin*/
 
- 
+ public function roles()
+ {
+     return $this->belongsToMany('App\Role');
+ }
+  
+ public function isAdmin() {
+     return $this->roles()->where('name', 'admin')->first();
+ }
+
 }

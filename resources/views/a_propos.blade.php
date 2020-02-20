@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-<br><br>
+<br><br><br>
 <section id="about">
         <div class="container">
 
@@ -16,13 +16,14 @@
                
                 <div class="col-sm-6 wow fadeInRight">
                     <h3 class="column-title">Notre hôtel</h3>
-                    <p>Entouré de jardins,Golden hôtel est situé sur la péninsule des almadies,<br>à l'extrémité de la côte ouest du sénégal.<br>Il comprend des chambres,un restaurant,un bar,des équipements,une assistance voyage,un service de blanchisserie...<br> Un petit-déjeuner est disponible tous les jours.<br> Des repas lègers sont servis tout au long de la journée au bar-salon.<br> L'établissement se trouve à 25km du centre de Dakar. <br>Un parking privée est disponible gratuitement sur place.</p>
+                   <h4><p>Entouré de jardins,Golden hôtel est situé sur la péninsule des almadies,<br>à l'extrémité de la côte ouest du sénégal.<br>Il comprend des chambres,un restaurant,un bar,des équipements,une assistance voyage,un service de blanchisserie...<br> Un petit-déjeuner est disponible tous les jours.<br> Des repas lègers sont servis tout au long de la journée au bar-salon.<br> L'établissement se trouve à 25km du centre de Dakar. <br>Un parking privée est disponible gratuitement sur place.</p></h4>
+                   <br>
 <ul class="listarrow">
-<li><i class="fa fa-angle-double-right"></i>Service en chambre</li>
-<li><i class="fa fa-angle-double-right"></i>Facilité Dailing directe</li>
-<li><i class="fa fa-angle-double-right"></i>service de blanchisserie</li>
-<li><i class="fa fa-angle-double-right"></i>Assistance Voyage</li> 
-<li><i class="fa fa-angle-double-right"></i>Bar & Restaurant</li>
+<h4><li><i class="fa fa-angle-double-right"></i>Service en chambre</li></h4>
+<h4><li><i class="fa fa-angle-double-right"></i>Facilité Dailing directe</li></h4>
+<h4><li><i class="fa fa-angle-double-right"></i>service de blanchisserie</li></h4>
+<h4><li><i class="fa fa-angle-double-right"></i>Assistance Voyage</li> </h4>
+<h4><li><i class="fa fa-angle-double-right"></i>Bar & Restaurant</li></h4>
 </ul> 
 
                 </div>
@@ -35,8 +36,9 @@
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Bienvenue à Golden hôtel</span>
-            <h2 class="mb-4">Une nouvelle vision de l'hôtel de luxe</h2>
+          <span class="subheading"><h2 class="mb-4">Bienvenue à Golden hôtel</h2></span>s
+            
+            <h2 class="mb-4">Une nouvelle vision de l'hôtel de luxe:</h2>
           </div>
         </div>  
         <div class="row d-flex">
@@ -48,7 +50,8 @@
               	</div>
               </div>
               <div class="media-body">
-                <h3 class="heading mb-3">Service amical</h3>
+               <!-- <h3 class="heading mb-3">Service amical</h3>-->
+                <h2 class="mb-4">Service amical</h2>
               </div>
             </div>      
           </div>
@@ -60,7 +63,8 @@
               	</div>
               </div>
               <div class="media-body">
-                <h3 class="heading mb-3">Prendre le petit-déjeuner</h3>
+              
+                <h2 class="mb-4">Prendre le petit-déjeuner</h2>
               </div>
             </div>    
           </div>
@@ -72,7 +76,7 @@
               	</div>
               </div>
               <div class="media-body">
-                <h3 class="heading mb-3">Services de transfert</h3>
+                <h2 class="mb-4">Services de transfert</h2>
               </div>
             </div>      
           </div>
@@ -94,7 +98,7 @@
               	</div>
               </div>
               <div class="media-body">
-                <h3 class="heading mb-3">Chambres confortables</h3>
+                <h2 class="mb-4">Chambres confortables</h2>
               </div>
             </div>      
           </div>
@@ -106,7 +110,7 @@
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Témoignage</span>
+          	<span class="subheading"><h2 class="mb-4">Témoignage</h2></span>
             <h2 class="mb-4">Notre invité heureux dit...</h2>
           </div>
         </div>  
@@ -132,9 +136,9 @@
 		                  </div>
 		                  <div class="text text-center">
 		                  	<p class="star"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-		                    <p class="mb-4">Hôtel tout confort,décoration intérieure et extérieure magnifique,personnel très aimable,petit déjeuner exceptionnel,très grande piscine,jardin avec vue sur la mer .</p>
+		                    <h4><p class="mb-4">Hôtel tout confort,décoration intérieure et extérieure magnifique,personnel très aimable,petit déjeuner exceptionnel,très grande piscine,jardin avec vue sur la mer .</p></h4>
 		                    <p class="name">Babacar</p>
-		                    <span class="position">client</span>
+		                    <span class="position"><h2 class="mb-4">clients</h2></span>
 		                  </div>
 		                </div>
 		              </div>

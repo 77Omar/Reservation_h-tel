@@ -17,19 +17,14 @@ class AbonnementMail extends Mailable
      * @return void
      */
 
-    public $nom_du_client;
-    public $prenom_du_client;
-    public $date_arrivé;
-    public $date_depart ;
-   public function __construct($nom_du_client, $prenom_du_client ,$date_arrivé, $date_depart)
-   {
-       $this->nom_du_client = $nom_du_client;
-       $this->prenom_du_client = $prenom_du_client;
-       $this->date_arrivé = $date_arrivé;
-       $this->date_depart  = $date_depart ;
-   }
-   public function build()
-   {
-       return $this->view('abonnement.mail-expired');
-   }
+   
+    public function __construct($data)
+    {
+        $this->data = $data;
+    }
+    public function build()
+    {
+        return $this->from('djeinaba08@gmail.com')->subject('New Customer Equiry')
+        ->view('abonnement.mail-expired')->with('data', $this->data);
+    }
 }

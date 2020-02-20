@@ -13,6 +13,7 @@
        
 
 
+       @if(!empty($reservation)) 
 @foreach($reservation as $reserver)
    <tr>
 
@@ -37,7 +38,10 @@
  
    </tr>
 @endforeach
+@endif
 
    </table>
-   <p><a href="{{route('Ajouter_reservation',['id'=>$reserver->id])}}" class="btn btn-primary">Ajouter</a></p>
+   <p><a href="/reservation/create/" class="btn btn-primary">Ajouter</a></p>
+
+   <br><br><br><br><br>
 @endsection

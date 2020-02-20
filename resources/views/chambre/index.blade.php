@@ -1,6 +1,5 @@
 @extends('menu')
 @section('content')
-
 <br><br><br><br>
 <table class="table table-striped">
     <tr>
@@ -12,7 +11,7 @@
 
     </tr>
 
-    
+ @if(!empty($chambres))   
 @foreach($chambres as $chambre)
    <tr>
 
@@ -24,8 +23,8 @@
 
        
        <th>
-           <p><a href="{{route('editer_Chambre',['id'=>$chambre->id])}}" class="btn btn-primary">Editer</a></p>
-
+       <p><a href="{{route('editer_Chambre',['id'=>$chambre->id])}}" class="btn btn-primary">Editer</a></p>
+        
            <form action="chambre/{{$chambre->id}}" method="post">
                @csrf
                @method('delete')
@@ -36,9 +35,12 @@
        
    
    </tr>
+ 
 @endforeach
 
-</table>
-<p><a href="{{route('Ajouter_Chambre',['id'=>$chambre->id])}}" class="btn btn-primary">Ajouter</a></p>
+@endif
 
+</table>
+<p><a href="/chambre/create/" class="btn btn-primary">Ajouter</a></p>
+<br><br><br><br><br>
 @endsection

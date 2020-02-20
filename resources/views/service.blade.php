@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-<br><br>
+<br><br><br>
 <section id="services" >
         <div class="container">
 
@@ -14,7 +14,7 @@
                     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
                         <div class="media service-box">
                             <div class="pull-left">
-                                <i class="fa fa-futbol-o"></i>
+                                
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">Restaurant & Bar</h4>
@@ -36,7 +36,7 @@
                     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
                         <div class="media service-box">
                             <div class="pull-left">
-                                <i class="fa fa-compass"></i>
+                              
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">chambres luxueuses</h4>
@@ -63,7 +63,7 @@
                     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
                         <div class="media service-box">
                             <div class="pull-left">
-                                <i class="fa fa-database"></i>
+                               
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">Banquet </h4>
@@ -110,7 +110,7 @@
                     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
                         <div class="media service-box">
                             <div class="pull-left">
-                                <i class="fa fa-bar-chart"></i>
+                               
                             </div>
                             
                         </div>
@@ -119,7 +119,7 @@
                     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
                         <div class="media service-box">
                             <div class="pull-left">
-                                <i class="fa fa-paper-plane-o"></i>
+                              
                             </div>
                            
                         </div>
@@ -128,7 +128,7 @@
                     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
                         <div class="media service-box">
                             <div class="pull-left">
-                                <i class="fa fa-bullseye"></i>
+                                
                             </div>
                             
                         </div>

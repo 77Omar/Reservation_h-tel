@@ -29,7 +29,7 @@
     	<div class="container-fluid px-0">
     		<div class="row no-gutters justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-			  <br><br>
+			
           	<span class="subheading"><h1>les chambres de l'hôtel golden</h1></span>
             <h2 class="mb-4">Les Types de Chambres:</h2>
           </div>
@@ -45,8 +45,8 @@
     							<p class="mb-0"><span class="price mr-1">100000f</span> <span class="per">Par nuit
 
 									</span></p>
-	    						<h3 class="mb-3"><a href="rooms-single.html">Chambre de luxe</a></h3>
-	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">Voir les détails de la chambre <span class="icon-long-arrow-right"></span></a></p>
+	    						<h3 class="mb-3"><a href="/">Chambre de luxe</a></h3>
+	    						<p class="pt-1"><a href="/" class="btn-custom px-3 py-2">Voir les détails de la chambre <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
@@ -59,8 +59,8 @@
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
     							<p class="mb-0"><span class="price mr-1">105000f</span> <span class="per">Par nuit</span></p>
-	    						<h3 class="mb-3"><a href="rooms-single.html">Chambre superieur</a></h3>
-	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">Voir les détails de la chambre <span class="icon-long-arrow-right"></span></a></p>
+	    						<h3 class="mb-3"><a href="/">Chambre superieur</a></h3>
+	    						<p class="pt-1"><a href="/" class="btn-custom px-3 py-2">Voir les détails de la chambre <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
@@ -74,8 +74,8 @@
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
     							<p class="mb-0"><span class="price mr-1">110000f</span> <span class="per">Par nuit</span></p>
-	    						<h3 class="mb-3"><a href="rooms-single.html">Chambre de famille</a></h3>
-	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">Voir les détails de la chambre<span class="icon-long-arrow-right"></span></a></p>
+	    						<h3 class="mb-3"><a href="/">Chambre de famille</a></h3>
+	    						<p class="pt-1"><a href="/" class="btn-custom px-3 py-2">Voir les détails de la chambre<span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
@@ -88,8 +88,8 @@
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
     							<p class="mb-0"><span class="price mr-1">100000f</span> <span class="per">Par nuit</span></p>
-	    						<h3 class="mb-3"><a href="rooms-single.html">Chambre classique</a></h3>
-	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">Voir les détails de la chambre <span class="icon-long-arrow-right"></span></a></p>
+	    						<h3 class="mb-3"><a href="/">Chambre classique</a></h3>
+	    						<p class="pt-1"><a href="/" class="btn-custom px-3 py-2">Voir les détails de la chambre <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
@@ -103,8 +103,8 @@
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
     							<p class="mb-0"><span class="price mr-1">110000f</span> <span class="per">Par nuit</span></p>
-	    						<h3 class="mb-3"><a href="rooms-single.html">Chambre de famille</a></h3>
-	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">Voir les détails de la chambre <span class="icon-long-arrow-right"></span></a></p>
+	    						<h3 class="mb-3"><a href="/">Chambre de famille</a></h3>
+	    						<p class="pt-1"><a href="/" class="btn-custom px-3 py-2">Voir les détails de la chambre <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
@@ -117,8 +117,8 @@
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
     							<p class="mb-0"><span class="price mr-1">100000f</span> <span class="per">Par nuit</span></p>
-	    						<h3 class="mb-3"><a href="rooms-single.html"></a>Chambre de luxe</h3>
-	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">Voir les détails de la chambre <span class="icon-long-arrow-right"></span></a></p>
+	    						<h3 class="mb-3"><a href="/"></a>Chambre de luxe</h3>
+	    						<p class="pt-1"><a href="/" class="btn-custom px-3 py-2">Voir les détails de la chambre <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
@@ -239,7 +239,7 @@
                     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
                         <div class="media service-box">
                             <div class="pull-left">
-                                <i class="fa fa-bar-chart"></i>
+                    
                             </div>
                             
                         </div>
@@ -257,7 +257,7 @@
                     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
                         <div class="media service-box">
                             <div class="pull-left">
-                                <i class="fa fa-bullseye"></i>
+                               
                             </div>
                             
                         </div>
@@ -266,8 +266,6 @@
             </div><!--/.row-->    
         </div><!--/.container-->
     </section><!--/#services-->
-
-  
     <section id="about">
         <div class="container">
 
@@ -282,14 +280,15 @@
                 </div>
                
                 <div class="col-sm-6 wow fadeInRight">
-                    <h3 class="column-title">Notre hôtel</h3>
-                    <p>Entouré de jardins,Golden hôtel est situé sur la péninsule des almadies,<br>à l'extrémité de la côte ouest du sénégal.<br>Il comprend des chambres,un restaurant,un bar,des équipements,une assistance voyage,un service de blanchisserie...<br> Un petit-déjeuner est disponible tous les jours.<br> Des repas lègers sont servis tout au long de la journée au bar-salon.<br> L'établissement se trouve à 25km du centre de Dakar. <br>Un parking privée est disponible gratuitement sur place.</p>
+                    <h2><h3 class="column-title">Notre hôtel</h3></h2>
+                   <h4><p>Entouré de jardins,Golden hôtel est situé sur la péninsule des almadies,<br>à l'extrémité de la côte ouest du sénégal.<br>Il comprend des chambres,un restaurant,un bar,des équipements,une assistance voyage,un service de blanchisserie...<br> Un petit-déjeuner est disponible tous les jours.<br> Des repas lègers sont servis tout au long de la journée au bar-salon.<br> L'établissement se trouve à 25km du centre de Dakar. <br>Un parking privée est disponible gratuitement sur place.</p></h4>
+                   <br>
 <ul class="listarrow">
-<li><i class="fa fa-angle-double-right"></i>Service en chambre</li>
-<li><i class="fa fa-angle-double-right"></i>Facilité Dailing directe</li>
-<li><i class="fa fa-angle-double-right"></i>service de blanchisserie</li>
-<li><i class="fa fa-angle-double-right"></i>Assistance Voyage</li> 
-<li><i class="fa fa-angle-double-right"></i>Bar & Restaurant</li>
+<h4><li><i class="fa fa-angle-double-right"></i>Service en chambre</li></h4>
+<h4><li><i class="fa fa-angle-double-right"></i>Facilité Dailing directe</li></h4>
+<h4><li><i class="fa fa-angle-double-right"></i>service de blanchisserie</li></h4>
+<h4><li><i class="fa fa-angle-double-right"></i>Assistance Voyage</li> </h4>
+<h4><li><i class="fa fa-angle-double-right"></i>Bar & Restaurant</li></h4>
 </ul> 
 
                 </div>
@@ -302,8 +301,9 @@
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Bienvenue à Golden hôtel</span>
-            <h2 class="mb-4">Une nouvelle vision de l'hôtel de luxe</h2>
+          <span class="subheading"><h2 class="mb-4">Bienvenue à Golden hôtel</h2></span>s
+            
+            <h2 class="mb-4">Une nouvelle vision de l'hôtel de luxe:</h2>
           </div>
         </div>  
         <div class="row d-flex">
@@ -315,7 +315,8 @@
               	</div>
               </div>
               <div class="media-body">
-                <h3 class="heading mb-3">Service amical</h3>
+               <!-- <h3 class="heading mb-3">Service amical</h3>-->
+                <h2 class="mb-4">Service amical</h2>
               </div>
             </div>      
           </div>
@@ -327,7 +328,8 @@
               	</div>
               </div>
               <div class="media-body">
-                <h3 class="heading mb-3">Prendre le petit-déjeuner</h3>
+              
+                <h2 class="mb-4">Prendre le petit-déjeuner</h2>
               </div>
             </div>    
           </div>
@@ -339,7 +341,7 @@
               	</div>
               </div>
               <div class="media-body">
-                <h3 class="heading mb-3">Services de transfert</h3>
+                <h2 class="mb-4">Services de transfert</h2>
               </div>
             </div>      
           </div>
@@ -361,7 +363,7 @@
               	</div>
               </div>
               <div class="media-body">
-                <h3 class="heading mb-3">Chambres confortables</h3>
+                <h2 class="mb-4">Chambres confortables</h2>
               </div>
             </div>      
           </div>
@@ -373,7 +375,7 @@
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Témoignage</span>
+          	<span class="subheading"><h2 class="mb-4">Témoignage</h2></span>
             <h2 class="mb-4">Notre invité heureux dit...</h2>
           </div>
         </div>  
@@ -399,9 +401,9 @@
 		                  </div>
 		                  <div class="text text-center">
 		                  	<p class="star"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-		                    <p class="mb-4">Hôtel tout confort,décoration intérieure et extérieure magnifique,personnel très aimable,petit déjeuner exceptionnel,très grande piscine,jardin avec vue sur la mer .</p>
+		                    <h4><p class="mb-4">Hôtel tout confort,décoration intérieure et extérieure magnifique,personnel très aimable,petit déjeuner exceptionnel,très grande piscine,jardin avec vue sur la mer .</p></h4>
 		                    <p class="name">Babacar</p>
-		                    <span class="position">client</span>
+		                    <span class="position"><h2 class="mb-4">clients</h2></span>
 		                  </div>
 		                </div>
 		              </div>
@@ -413,6 +415,8 @@
       </div>
     </section>
     </section><!--/#about-->
+
+
 
 
  
@@ -582,7 +586,7 @@
     </section><!--/#portfolio-->
 <!--reservation-->
    <!-- Booking -->
-   <section class="section-booking bg1-pattern p-t-100 p-b-110">
+   <!--<section class="section-booking bg1-pattern p-t-100 p-b-110">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-40 p-b-30">
@@ -604,23 +608,23 @@
 						<div class="row">
 							<div class="col-md-6">
 								<!-- Date -->
-								<span class="txt9">
+								<!--<span class="txt9">
 									nom_du_client
 								</span>
 
 								<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="nom_du_client" placeholder="Nom du client">
 									<!--<i class="btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18" aria-hidden="true"></i>-->
-								</div>
+								<!--</div>
 
 								<!-- Time -->
-								<span class="txt9">
+								<!--<span class="txt9">
 									Nbr_nuit
 								</span>
 
 								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
-									<select class="selection-1" name="Nbr_nuit">
+									<!--<select class="selection-1" name="Nbr_nuit">
 										<option>0</option>
 										<option>1</option>
 										<option>2</option>
@@ -646,19 +650,19 @@
 								</div>
 
 								<!-- People -->
-								<span class="txt9">
+								<!--<span class="txt9">
 									statu
 								</span>
 
 								<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="texte" name="statu" placeholder="statu de la personne">
 									<!--<i class="btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18" aria-hidden="true"></i>-->
-								</div>
+								<!--</div>
 							</div>
 
 							<div class="col-md-6">
 								<!-- Name -->
-								<span class="txt9">
+								<!--<span class="txt9">
 									prenom_du_client
 								</span>
 
@@ -667,7 +671,7 @@
 								</div>
 
 								<!-- Phone -->
-								<span class="txt9">
+								<!--<span class="txt9">
 									date_arrivé
 								</span>
 
@@ -676,7 +680,7 @@
 								</div>
 
 								<!-- Email -->
-								<span class="txt9">
+								<!--<span class="txt9">
 									date_depart
 								</span>
 
@@ -688,7 +692,7 @@
 
 						<div class="wrap-btn-booking flex-c-m m-t-6">
 							<!-- Button3 -->
-							<button type="submit" class="btn btn-primary">Enregistrement</button>
+							<!--<button type="submit" class="btn btn-primary">Enregistrement</button>
 						</div>
 					</form>
 				</div>

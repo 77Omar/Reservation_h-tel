@@ -43,8 +43,10 @@ class HotelController extends Controller
    $hote->nombre_etoile = $request->input('nombre_etoile');
    
    $hote->save();
-   return redirect('/');
-
+   //return redirect('/');
+   $hotel= \App\Hotel::orderBy('created_at', 'DESC')->get();
+       // dd($chambre);
+        return view('Hôtel.index', compact('hotel'));
     }
 
     /**
@@ -89,7 +91,10 @@ class HotelController extends Controller
            'nombre_etoile' => $request->input('nombre_etoile'),
        ]);
     }
-       return redirect()->back();
+       //return redirect()->back();
+       $hotel= \App\Hotel::orderBy('created_at', 'DESC')->get();
+       // dd($chambre);
+        return view('Hôtel.index', compact('hotel'));
     }
     /**
      * Remove the specified resource from storage.

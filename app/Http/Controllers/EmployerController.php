@@ -40,8 +40,10 @@ class EmployerController extends Controller
         $emploie->Grade = $request->input('Grade');
         $emploie->Chambre = $request->input('Chambre');
         $emploie->save();
-        return redirect('/');
-     
+       // return redirect('/');
+       $employer= \App\Employer::orderBy('created_at', 'DESC')->get();
+       // dd($chambre);
+        return view('employer.index', compact('employer'));
     }
 
     /**
@@ -84,7 +86,10 @@ class EmployerController extends Controller
            'Chambre' => $request->input('Chambre'),
        ]);
    }
-   return redirect()->back();
+   //return redirect()->back();
+   $employer= \App\Employer::orderBy('created_at', 'DESC')->get();
+   // dd($chambre);
+    return view('employer.index', compact('employer'));
 
     }
 

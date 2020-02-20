@@ -7,7 +7,7 @@
              <th>.Grade</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th>    
              <th>.Chambre</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th> 
        </tr>
-    
+       @if(!empty($employer)) 
 @foreach($employer as $emploie)
    <tr>
    <!--<img src="{{$emploie->images ? asset($emploie->images) : asset('uploads/images/default.png')}}" alt="{{$emploie->name}}" width="100"></th>-->
@@ -29,9 +29,13 @@
      
    </tr>
 @endforeach
+@endif
 
 
 
    </table>
-   <p><a href="{{route('Ajouter_employer',['id'=>$emploie->id])}}" class="btn btn-primary">Ajouter</a></p>
+
+   <p><a href="/employer/create/" class="btn btn-primary">Ajouter</a></p>
+
+   <br><br><br><br><br>
    @endsection

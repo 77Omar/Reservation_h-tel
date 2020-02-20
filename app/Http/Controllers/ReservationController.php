@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use \Auth;
+use App\Mail\AbonnementMail;
+use Mail;
 class ReservationController extends Controller
 {
     public function reservation(){
@@ -43,6 +45,7 @@ class ReservationController extends Controller
      */
     public function store(Request $request)
     {
+        $email=Auth::user()->email;
         $Reservation = new \App\Reservation();
         $Reservation->nom_du_client = $request->input('nom_du_client');
         $Reservation->prenom_du_client = $request->input('prenom_du_client');
@@ -52,7 +55,20 @@ class ReservationController extends Controller
         $Reservation->statu = $request->input('statu');
         $Reservation->save();
 
-       return redirect('/');
+        //declaration
+        $name=$Reservation->nom_du_client;
+        $prenom=$Reservation->prenom_du_client;
+        //declaration tableau
+        $data=array(
+        "name"=>$name ,
+        "prenom"=>$prenom,
+    );
+        Mail::send('mail',$data,function($message) use($name,$email,$prenom){
+            $message->to($email)->subject('lessai subject');
+        });
+       
+       return('merci de votre confiance');
+       //return redirect('/');
 
     }
 
@@ -100,7 +116,10 @@ class ReservationController extends Controller
                 'statu' => $request->input('statu'),
             ]);
         }
-        return redirect()->back();
+        //return redirect()->back();
+        $reservation= \App\Reservation::orderBy('created_at', 'DESC')->get();
+        // dd($chambre);
+         return view('reservation.index', compact('$reservation'));
      
     }
 

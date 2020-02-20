@@ -1,7 +1,7 @@
 @extends('menu')
 @section('content')
 <br><br><br><br><br>
-<form action="{{route('personne.update',['id'=>$personne->id])}}" method="post">
+<form action="{{route('update_personne',['id'=>$personne->id])}}" method="post">
    @csrf
    @method('patch')
    <div><input type="text" name="Nom" class="form-control" placeholder="le nom du personne" value="{{$personne->Nom}}"></div>

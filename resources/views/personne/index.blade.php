@@ -10,7 +10,7 @@
            <th>.Email</th><th></th><th></th><th></th><th></th><th></th>  
        </tr>
 
-    
+       @if(!empty($personne)) 
 @foreach($personne as $person)
 
    <tr>
@@ -34,9 +34,11 @@
       
    </tr>
 @endforeach
-
+@endif
 
    </table>
-   <p><a href="{{route('Ajouter_personne',['id'=>$person->id])}}" class="btn btn-primary">Ajouter</a></p>
+   <p><a href="/personne/create/" class="btn btn-primary">Ajouter</a></p>
+
+   <br><br><br><br><br>
 @endsection
 </th>

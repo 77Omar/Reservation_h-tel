@@ -1,2 +1,2 @@
-<h3>Hello!!! {{"Omar"}}</h3>
-nous devons vous  annonçer que votre abonnement va expirer le {{"5/02/2020"}}
+<h3>Hello!!! {{$name}} , {{$prenom}}</h3>
+nous devons vous  annonçer que votre reservation est confirmé

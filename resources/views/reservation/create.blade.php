@@ -70,7 +70,7 @@
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
 									<select class="selection-1" name="statu">
-										<option>person</option>
+								
 										<option>En attente</option>
 										<option>En consommation</option>
 										<option>En annulation</option>
@@ -95,7 +95,7 @@
 								</span>
 
 								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="date_arrivé" placeholder="date d'arrivé">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="date" name="date_arrivé" placeholder="date d'arrivé">
 								</div>
 
 								<!-- Email -->
@@ -104,7 +104,7 @@
 								</span>
 
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="date_depart" placeholder="date de depart">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="date" name="date_depart" placeholder="date de depart">
 								</div>
 							</div>
 						</div>

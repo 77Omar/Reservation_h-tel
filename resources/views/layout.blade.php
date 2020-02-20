@@ -28,7 +28,7 @@
             <div class="container">
                 <div class="navbar-header">
                    
-                    <a class="navbar-brand" href="index.html"><img src="{{asset('images/logo.png')}}" alt="logo"></a>
+                    <a class="navbar-brand" href="/"><img src="{{asset('images/logo.png')}}" alt="logo"></a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
@@ -41,7 +41,7 @@
 					            	<li class="scroll"><a href="{{route('portefeuille')}}">Portefeuille</a></li>
                         <li class="scroll"><a href="{{route('reservation')}}">Reservation</a></li>
                         <li class="scroll"><a href="{{route('contact')}}">Contact</a></li> 
-                        <li class="scroll"><a href="{{route('login')}}">Connecter</a></li> 
+                        <li class="scroll"><a href="{{route('login')}}">Connecter</a></li>
                         
                       <!--  <li><a href="{{route('login')}}">Se connecter</a></li> -->
                        @guest

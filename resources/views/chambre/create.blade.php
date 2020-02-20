@@ -1,6 +1,5 @@
 
 @extends('menu')
-@extends('menu')
 @section('content')
 <br><br><br><br>
        <div class="container">

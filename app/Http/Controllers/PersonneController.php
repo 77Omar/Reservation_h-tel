@@ -44,7 +44,10 @@ class PersonneController extends Controller
         $person->email = $request->input('email');
 
         $person->save();
-        return redirect('/');
+        //return redirect('/');
+        $personne= \App\personne::orderBy('created_at', 'DESC')->get();
+   // dd($chambre);
+        return view('personne.index', compact('personne'));
      
     }
 
@@ -91,8 +94,10 @@ class PersonneController extends Controller
            'email' => $request->input('email'),
        ]);
    }
-   return redirect()->back();
-
+   //return redirect()->back();
+   $personne= \App\personne::orderBy('created_at', 'DESC')->get();
+   // dd($chambre);
+    return view('personne.index', compact('personne'));
     }
 
     /**

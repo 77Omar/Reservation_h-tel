@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-<br><br>
+<br><br><br>
 <section id="portfolio">
         <div class="container">
             <div class="section-header">

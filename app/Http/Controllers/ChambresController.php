@@ -16,6 +16,7 @@ class ChambresController extends Controller
     {
        
         $chambres= \App\Chambre::orderBy('created_at', 'DESC')->get();
+        //dd($chambres);
         return view('chambre.index', compact('chambres'));
     }
 
@@ -50,8 +51,10 @@ class ChambresController extends Controller
         $chambre->typechambre_id = $request->input("typechambre_id");
 
         $chambre->save();
-        return redirect('/');
-
+        //return redirect('/');
+        $chambre= \App\Chambre::orderBy('created_at', 'DESC')->get();
+        // dd($chambre);
+         return view('chambre.index', compact('chambre'));
      
     }
 
@@ -106,9 +109,11 @@ class ChambresController extends Controller
            
        ]);
    }
-   return redirect()->back();
+   //return redirect()->back();
 
-       
+   $chambre= \App\Chambre::orderBy('created_at', 'DESC')->get();
+  // dd($chambre);
+   return view('chambre.index', compact('chambre'));
 
 
     }

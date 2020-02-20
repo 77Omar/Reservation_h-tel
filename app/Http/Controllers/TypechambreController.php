@@ -43,8 +43,9 @@ class TypechambreController extends Controller
         
 
         $Type->save();
-        return redirect('/');
-     
+        //return redirect('/');
+        $typechambre= \App\Typechambre::orderBy('created_at', 'DESC')->get();
+ return view('type_chambre.index', compact('typechambre'));
     }
 
     /**
@@ -81,16 +82,18 @@ class TypechambreController extends Controller
     {
             
    $typechambre = \App\Typechambre::find($id);
+   //dd($typechambre);
    if($typechambre){
        $typechambre->update([
            'chambre_de_luxe' => $request->input('chambre_de_luxe'),
            'chambre_de_famille' => $request->input('chambre_de_famille'),
            'chambre_superieur' => $request->input('chambre_superieur'),
+]);
+ }
+ // return redirect()->back();
 
-       ]);
-   }
-   return redirect()->back();
-
+ $typechambre= \App\Typechambre::orderBy('created_at', 'DESC')->get();
+ return view('type_chambre.index', compact('typechambre'));
     }
 
     /**

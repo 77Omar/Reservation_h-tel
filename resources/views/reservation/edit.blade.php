@@ -1,8 +1,7 @@
 @extends('menu')
 @section('content')
 <br><br><br><br>
-<form action="{{route('update_reservation',['id'=>$reservation->id])}}
-" method="post">
+<form action="{{route('update_reservation',['id'=>$reservation->id])}}" method="post">
    @csrf
    @method('patch')
    <div><input type="text" name="nom_du_client" class="form-control" placeholder="le nom du client" value="{{$reservation->nom_du_client}}"></div>

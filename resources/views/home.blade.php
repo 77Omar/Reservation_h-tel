@@ -1,13 +1,9 @@
 @extends('menu')
-
 @section('content')
 <br><br><br>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-        
-      
-    
     
     <section class="section-booking bg1-pattern p-t-100 p-b-100">
     <div> <a class="btn btn-primary"   href="/chambre"><h1><h1><h1>Chambres</h1></h1></h1></a></div>
@@ -143,7 +139,7 @@
     </section>
     </div>
     
-<br><br><br><br>
+<br><br>
 <!-- Booking -->
 <div> <a class="btn btn-primary"   href="/reservation"><h1><h1><h1>Reservations</h1></h1></h1></a>
 <section class="section-booking bg1-pattern p-t-100 p-b-110">
@@ -266,7 +262,7 @@
 	
 
 </div>
-<br><br><br>
+<br><br>
     <section class="section-booking bg1-pattern p-t-100 p-b-110">
     <div> <a class="btn btn-primary"   href="/Hôtel"><h1><h1><h1>Hotel</h1></h1></h1></a></div>
 		<div class="container">
@@ -294,7 +290,7 @@
         </div><!--/.container-->
     </section><!--/#portfolio-->
 
-     <br><br><br>
+     <br><br>
     <section class="section-booking bg1-pattern p-t-100 p-b-110">
     <div> <a class="btn btn-primary"   href="/employer"><h1><h1><h1>Employers</h1></h1></h1></a></div>
 		<div class="container">
@@ -321,66 +317,7 @@
             </div>
         </div><!--/.container-->
     </section><!--/#portfolio-->
-<br><br><br>
-    <div> <a class="btn btn-primary"   href="/contact"><h1><h1><h1>Contact</h1></h1></h1></a></div>
-    <section class="section-booking bg1-pattern p-t-100 p-b-110">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-40 p-b-30">
-					<div class="t-center">
-						<span class="tit2 t-center"> 
-						
-							<h1>Contactez-nous<h1>
-						</span>
-                <!--<p class="wow fadeInDown">Golden hôtel est l'un des meilleurs hôtel d'afrique<br>. Un cadre paradisiatique en face de l'atlantique<br>. Un personnel accueillant et un service à la hauteur de nos attentes.</p>-->
-            </div>
-        </div>
-  
-        <div class="container">
-            <div class="container contact-info">
-                <div class="row">
-				  <div class="col-sm-4 col-md-4">
-                        <div class="contact-form">
-                            <h3>Information de contact</h3>
-
-                            <address>
-                              <strong>L'hôtel est situé.</strong><br>
-                              sur la péninsule des almadies<br>
-                              à l'extrémité de la côte ouest du sénégal<br>
-                              <abbr title="Phone">tel:</abbr> +221 33 869 69 69
-                            </address>
-					</div></div>
-                    <div class="col-sm-8 col-md-8">
-                        <div class="contact-form">
-                       
-                            <form id="main-contact-form" name="contact-form" method="post" action="/Contact/contact">
-                                @csrf
-                                <div class="form-group">
-                                    <input type="text" name="Nom" class="form-control" placeholder="Nom" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="Email" name="Email" class="form-control" placeholder="Email" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="Objet" class="form-control" placeholder="Objet" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="Message" class="form-control" rows="8" placeholder="Message" required></textarea>
-                                </div>
-                            
-                                <div class="wrap-btn-booking flex-c-m m-t-6">
-							<!-- Button3 -->
-							<button type="submit" class="btn btn-primary">Envoyer</button>
-						      </div>
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>   
-   </section><!--/#bottom-->
-   <br><br><br>
+   <br><br>
     <section class="section-booking bg1-pattern p-t-100 p-b-110">
     <div> <a class="btn btn-primary"   href="/personne"><h1><h1><h1>Personne</h1></h1></h1></a></div>
 		<div class="container">

@@ -11,7 +11,7 @@
            
        </tr>
 
-    
+       @if(!empty($typechambre)) 
 @foreach($typechambre as $Type)
    <tr>
 
@@ -30,11 +30,15 @@
            </form>
 
        </th>
-      
+       
+     
+
 @endforeach
+@endif
 
 
    </table>
+   <p><a href="/typechambre/create/" class="btn btn-primary">Ajouter</a></p>
 
-   <p><a href="{{route('Ajouter_typechambre',['id'=>$Type->id])}}" class="btn btn-primary">Ajouter</a></p>
+   <br><br><br><br><br>
 @endsection

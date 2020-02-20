@@ -11,7 +11,7 @@
        </tr>
 
 
-
+    @if(!empty($hotel)) 
 @foreach($hotel as $hote)
    <tr>
   
@@ -34,8 +34,11 @@
    </tr>
 
 @endforeach
+@endif
 
    </table>
-     <p><a href="{{route('Ajouter_Hôtel',['id'=>$hote->id])}}" class="btn btn-primary">Ajouter</a></p>
+   <p><a href="/Hôtel/create/" class="btn btn-primary">Ajouter</a></p>
+   
+   <br><br><br><br><br>
 @endsection
 
